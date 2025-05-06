@@ -43,6 +43,7 @@ Tablets
 Mobile screens.
 
 📬 Contact
+
 Feel free to reach out via LinkedIn(www.linkedin.com/in/amrutha-nayak-6a0ab3200)
 
 
