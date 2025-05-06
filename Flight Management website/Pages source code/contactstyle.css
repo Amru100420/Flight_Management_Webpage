@@ -1,0 +1,192 @@
+body {
+  background-image: url(../Images/flightimage4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin-right:2px;
+  margin-left: 0%;
+}
+
+.contact-left {
+  width: 100%;
+  color: white;
+  padding: 40px;
+  box-sizing: border-box;
+  /* flex: 1; */
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-left h2 {
+  margin-bottom: 30px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.info i {
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+.contact-right {
+  /* flex: 2; */
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.contact-right h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid #a1da45;
+}
+
+#Contactbutton {
+  width: 400px;
+  background-color:#51e075 ;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+#Contactbutton:hover {
+  background-color: rgb(58, 163, 182);
+  color: #51e075;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: #ddd;
+}
+
+nav {
+  background-image: linear-gradient(to bottom right, rgb(0, 204, 255), #ebf8e1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li:hover>ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #0055cc;
+}
+
+nav ul ul li a {
+  padding: 10px;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #004aad;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

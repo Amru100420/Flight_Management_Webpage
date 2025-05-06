@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Management - Home</title>
+  <link rel="stylesheet" href="stylehome.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <img src="../Images/flightmanagement3.jpg" alt="Logo">
+    <span>Dream Travels</span>
+  </div>
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <ul id="menu">
+    <li><a href="flighthome.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="Loginform.html">Login</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>🙇‍♀️ Welcome to Dream Travels 🌏</h1><br><br>
+  <div class="scroll-text">
+    ✈️  Special Offer: 30% Discount on First Booking! ✈️
+  </div><br><br>
+  <p style="text-align: center;align-content: center;font-family: cursive;font-size: x-large;">Your journey begins here. <br> flights, manage your trips, and more.</p>
+  <br><br><form action="Loginform.html"><button type="submit">Get Started ✈️</button></form>
+
+</main>
+
+<footer>
+  <p> 🏝️ Dream Travels Flight Management ✈️ </p>
+</footer>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('menu');
+  menu.classList.toggle('show');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Management - About Us</title>
+  <link rel="stylesheet" href="stylehome.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body style="background-image: linear-gradient(rgb(117, 106, 219),rgb(52, 207, 200));">
+
+  <nav>
+    <div class="logo">
+      <img src="../Images/flightmanagement3.jpg" alt="Logo">
+      <span>Dream Travels</span>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul id="menu">
+      <li><a href="flighthome.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="Loginform.html">Login</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="aboutuscontent">
+      <h2><u>Who We Are</u></h2>
+      <p>Dream Travels is a leading-edge platform designed to streamline and simplify every aspect of air travel
+        management. From booking and check-in to real-time flight updates and route optimization, we bring innovation
+        and efficiency to airlines and travelers alike.</p>
+      <p>Flight Management System is dedicated to providing the best flight booking and management experience for our
+        customers worldwide.</p><br>
+      <h2><u> We Offer</u></h2>
+      <ul type="square" style="list-style-position: inside;">
+        <li>🛫 Real-Time Flight Tracking
+          Monitor departures, arrivals, delays, and cancellations with up-to-the-minute accuracy.
+        </li><br>
+        <li> 📊 Data-Driven Airline Management
+          Use advanced analytics to optimize schedules, capacity planning, and performance metrics.
+        </li><br>
+        <li>💺 Streamlined Booking & Check-in
+          Simplify ticketing, boarding passes, and seat selection through a centralized interface.
+        </li><br>
+        <li>🔒 Secure & Scalable Architecture
+          Built with top-tier security protocols and cloud-based infrastructure for seamless scalability.
+        </li><br>
+        <li>📱 Responsive Mobile & Web Access
+          Access the system anytime, anywhere on mobile or desktop devices.</li>
+      </ul><br>
+      <h2><u>Get in Touch</u></h2>
+      <p>Have questions or want to work with us? Reach out through our <a href="contactus.html">Contact Us</a> page—we'd
+        love to hear from you!</p>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>🏝️ Dream Travels Flight Management ✈️</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+
+</html>

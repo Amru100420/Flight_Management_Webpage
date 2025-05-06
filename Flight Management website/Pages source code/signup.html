@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<head>
+    <title>Sign up</title>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+
+</head>
+<body>
+    <nav> 
+        <div class="logo">
+          <img src="../Images/flightmanagement3.jpg" alt="Logo">
+          <span>Dream Travels</span>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu">
+          <li><a href="flighthome.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="Loginform.html">Login</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    <div class="signupmain">
+        <h1>🙋‍♀️ Welcome Traveller</h1><br>
+        <p><b>Few steps to your dream journey</b></p><br>
+        <h2>Sign up</h2>
+        <input type="text" placeholder="Enter username"><br>
+        <input type="password" placeholder="Enter password" class="formlabels"><br>
+        <input type="password" placeholder="Confirm password" class="formlabels"><br>
+        <input type="submit" id="signupbutton" value="Sign in" onclick="Loginform.html">
+    </div>
+    <footer>
+        <p>🏝️ Dream Travels Flight Management ✈️</p>
+      </footer>
+      <script>
+      function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+      }
+      </script>
+</body>
+</html>

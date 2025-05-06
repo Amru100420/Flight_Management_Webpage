@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contactstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="../Images/flightmanagement3.jpg" alt="Logo">
+      <span>Dream Travels</span>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul id="menu">
+      <li><a href="flighthome.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="Loginform.html">Login</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="contact-section">
+    <div class="contact-left">
+      <h2>Find us on</h2>
+      <div class="info">
+        <p>✉️ Dtravels@gmail.com   📞+91 9873542672  📍123 Street, Mumbai, India, 100001</p>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-right" style="background-color: rgb(78, 177, 177,0.5);">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email ID" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Website">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Contact Number">
+        </div>
+        <div class="form-group">
+          <textarea rows="4" placeholder="Message"></textarea>
+        </div>
+        <input type="submit" id="Contactbutton">
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p> 🏝️ Dream Travels Flight Management ✈️ </p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(../Images/flightimage2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: rgba(64, 178, 212, 0.5);
+    color: rgb(22, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #0055cc;
+}
+
+nav ul ul li a {
+    padding: 10px;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Main content */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Scrolling Text */
+.scroll-text {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: scroll 8s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #004aad;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+.mainbody{
+    text-align: center;
+    margin: auto;
+}
+.mainbody input{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#loginbutton{
+    width: 30%;
+    background-color: rgb(120, 101, 231);    
+}
+#loginbutton:hover{
+    background-color: rgb(207, 56, 207);
+    border-color: white;
+    color:white ;
+    transition: background-color 0.5s ease-in-out;    
+}
+.signupmain{
+    text-align: center;
+    margin:auto;
+}
+.signupmain input{
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#signupbutton{
+    width: 30%;
+    background-color: rgb(120, 101, 231);    
+}
+#signupbutton:hover{
+    background-color: rgb(207, 56, 207);
+    transition: margin-right 2s ease-in-out; 
+    border-color: white;
+    color:white ;
+    transition: background-color 0.5s ease-in-out;    
+}
+.aboutuscontent{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

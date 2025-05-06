@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../Images/flightmanagement3.jpg" alt="Logo">
+            <span>Flight Management</span>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu">
+            <li><a href="flighthome.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="Loginform.html">Login</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="mainbody">
+        <div class="LoginMain">
+            <h2>🌈 Dream travels at your service for a<br> dream journey anywhere in the world 🌍</h2><br>
+            <h2>Login</h2>      
+            <form>
+                <input type="text" placeholder="Enter username"><br>
+                <input type="password" placeholder="Enter password" class="formlabels"><br><br>
+                <input type="submit" id="loginbutton"><br><br>
+                <p>New to website?<a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>🏝️ Dream Travels Flight Management ✈️ </p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar ul').classList.toggle('show');
+        }
+    </script>
+    </form>
+</body>
+
+</html>
